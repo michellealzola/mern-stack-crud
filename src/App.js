@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 
 // Import from react-router-dom
-import { BrowserRouter as Router, Routes,
+import { BrowserRouter as Router, Switch,
 	Route, Link } from "react-router-dom";
 
 // Import other React Component
@@ -59,7 +59,7 @@ return (
 		<Row>
 			<Col md={12}>
 			<div className="wrapper">
-				<Routes>
+				<Switch>
 				<Route exact path="/"
 					component={CreateStudent} />
 				<Route path="/create-student"
@@ -68,7 +68,7 @@ return (
 					component={EditStudent} />
 				<Route path="/student-list"
 					component={StudentList} />
-				</Routes>
+				</Switch>
 			</div>
 			</Col>
 		</Row>

@@ -42,7 +42,7 @@ useEffect(() => {
 		setFormValues({ name, email, rollno });
 	})
 	.catch((err) => console.log(err));
-}, []);
+}, [props]);
 
 // Return student form
 return (
